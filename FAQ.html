@@ -4,37 +4,7 @@
   <meta charset="UTF-8" />
   <title>River Valley Wound Care | FAQ</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <style>
-    :root { --bg:#ffffff; --bg-soft:#f6f7fb; --text:#111827; --muted:#6b7280;
-            --accent:#0ea5e9; --accent-dark:#0369a1; --border:#e5e7eb;
-            --radius-md:14px; --radius-pill:999px; }
-    *{box-sizing:border-box;margin:0;padding:0;}
-    body{font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:var(--bg);color:var(--text);line-height:1.5;}
-    a{color:inherit;text-decoration:none;}
-    .page{max-width:1120px;margin:0 auto;padding:24px 16px 48px;}
-    header{display:flex;align-items:center;justify-content:space-between;gap:20px;padding-bottom:18px;border-bottom:1px solid var(--border);}
-    .brand{display:flex;align-items:center;gap:12px;}
-    .brand-logo{height:60px;width:auto;}
-    .brand-text{display:flex;flex-direction:column;gap:2px;}
-    .brand-name{font-size:1rem;font-weight:650;letter-spacing:0.08em;text-transform:uppercase;}
-    .brand-tagline{font-size:0.8rem;color:var(--muted);}
-    nav{display:flex;flex-wrap:wrap;gap:16px;font-size:0.9rem;color:var(--muted);}
-    nav a{position:relative;padding:4px 0;display:inline-block;}
-    nav a::after{
-      content:"";position:absolute;left:0;right:0;bottom:-4px;height:2px;background:var(--accent);border-radius:999px;
-      transform:scaleX(0);transform-origin:left;transition:transform 0.2s ease;
-    }
-    nav a:hover::after,nav a:focus-visible::after{transform:scaleX(1);}
-    .nav-cta{padding:7px 14px;border-radius:var(--radius-pill);border:1px solid var(--accent);color:var(--accent-dark);font-size:0.85rem;font-weight:500;}
-    .nav-cta:hover{background:var(--accent);color:white;}
-    h1{font-size:1.9rem;margin:28px 0 4px;}
-    .subtitle{font-size:0.95rem;color:var(--muted);margin-bottom:20px;max-width:40rem;}
-    .faq-item{border-radius:var(--radius-md);border:1px solid var(--border);padding:14px 16px 12px;background:var(--bg-soft);margin-bottom:14px;}
-    .q{font-weight:600;font-size:0.96rem;margin-bottom:4px;}
-    .a{font-size:0.88rem;color:#4b5563;}
-    .alert{margin-top:20px;font-size:0.86rem;background:#fef2f2;border:1px solid #fecaca;border-radius:var(--radius-md);padding:12px 14px;color:#991b1b;}
-    @media(max-width:900px){header{flex-direction:column;align-items:flex-start;gap:10px;}}
-  </style>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <div class="page">
@@ -57,57 +27,69 @@
     </header>
 
     <main>
-      <h1>Frequently Asked Questions</h1>
-      <p class="subtitle">
-        Here are answers to some of the most common questions we hear from patients and families.
-      </p>
-
-      <div class="faq-item">
-        <div class="q">Do I need a referral to be seen?</div>
-        <div class="a">
-          Many patients are referred by their primary care doctor, surgeon, endocrinologist, or other specialist. Some insurance plans allow self-referral. If you are unsure, call our office and we will help you check your benefits.
+      <section class="hero">
+        <div class="hero-content">
+          <div class="eyebrow">Frequently asked questions</div>
+          <h1>What to know before your wound care visit</h1>
+          <p class="subtitle">Quick answers to help you feel prepared, whether you're scheduling your first appointment or returning for follow-up care.</p>
+          <div class="hero-actions">
+            <a href="Contact.html" class="button primary">Schedule an appointment</a>
+            <a href="Conditions.html" class="button secondary">See conditions we treat</a>
+          </div>
         </div>
-      </div>
-
-      <div class="faq-item">
-        <div class="q">What should I bring to my first visit?</div>
-        <div class="a">
-          Please bring your photo ID, insurance card, a list of medications and allergies, and any recent wound-related records or imaging if available. If you are currently using special dressings or off-loading devices, bring those as well.
+        <div class="hero-image">
+          <img src="team-hero.jpg" alt="Provider consulting with patient" />
         </div>
-      </div>
+      </section>
 
-      <div class="faq-item">
-        <div class="q">How long does wound healing usually take?</div>
-        <div class="a">
-          Healing time varies based on the type of wound, circulation, infection, blood sugar control, and other health conditions. At your evaluation, we will review your specific situation and outline realistic expectations for healing.
+      <section class="section">
+        <header>
+          <div class="eyebrow">Patient guidance</div>
+          <h2>Answers for the most common questions</h2>
+          <p class="intro">If you don't see your question here, call or email our team. We're happy to help.</p>
+        </header>
+
+        <div class="card" style="padding: 14px 16px 10px;">
+          <div class="faq-item">
+            <div class="q">Do I need a referral to be seen?</div>
+            <div class="a">Many patients are referred by their primary care doctor, surgeon, endocrinologist, or other specialist. Some insurance plans allow self-referral. If you are unsure, call our office and we will help you check your benefits.</div>
+          </div>
+
+          <div class="faq-item">
+            <div class="q">What should I bring to my first visit?</div>
+            <div class="a">Please bring your photo ID, insurance card, a list of medications and allergies, and any recent wound-related records or imaging if available. If you are currently using special dressings or off-loading devices, bring those as well.</div>
+          </div>
+
+          <div class="faq-item">
+            <div class="q">How long does wound healing usually take?</div>
+            <div class="a">Healing time varies based on the type of wound, circulation, infection, blood sugar control, and other health conditions. At your evaluation, we will review your specific situation and outline realistic expectations for healing.</div>
+          </div>
+
+          <div class="faq-item">
+            <div class="q">How often will I need to come to clinic?</div>
+            <div class="a">Many patients are seen weekly or every other week early in treatment, then less often as the wound improves. Your schedule is individualized to your needs and your response to therapy.</div>
+          </div>
+
+          <div class="faq-item">
+            <div class="q">Do you coordinate with my other doctors?</div>
+            <div class="a">Yes. We regularly communicate with your primary care provider, surgeons, vascular specialists, and other members of your care team to ensure your wound care fits within your overall health plan.</div>
+          </div>
+
+          <div class="faq-item">
+            <div class="q">What types of treatments do you offer?</div>
+            <div class="a">Treatments may include debridement, advanced dressings, negative pressure wound therapy, off-loading, compression therapy, and referrals for imaging or vascular evaluation when needed.</div>
+          </div>
         </div>
-      </div>
 
-      <div class="faq-item">
-        <div class="q">How often will I need to come to clinic?</div>
-        <div class="a">
-          Many patients are seen weekly or every other week early in treatment, then less often as the wound improves. Your schedule is individualized to your needs and your response to therapy.
+        <div class="alert">
+          <strong>If you develop sudden severe pain, spreading redness, fever, foul odor, or concern for a severe infection or loss of blood flow, call 911 or go to the nearest emergency department.</strong>
         </div>
-      </div>
-
-      <div class="faq-item">
-        <div class="q">Do you coordinate with my other doctors?</div>
-        <div class="a">
-          Yes. We regularly communicate with your primary care provider, surgeons, vascular specialists, and other members of your care team to ensure your wound care fits within your overall health plan.
-        </div>
-      </div>
-
-      <div class="faq-item">
-        <div class="q">What types of treatments do you offer?</div>
-        <div class="a">
-          Treatments may include debridement, advanced dressings, negative pressure wound therapy, off-loading, compression therapy, and referrals for imaging or vascular evaluation when needed.
-        </div>
-      </div>
-
-      <div class="alert">
-        <strong>If you develop sudden severe pain, spreading redness, fever, foul odor, or concern for a severe infection or loss of blood flow, call 911 or go to the nearest emergency department.</strong>
-      </div>
+      </section>
     </main>
+
+    <footer>
+      River Valley Wound Care · 1501 South Waldron Road, Fort Smith, AR · (479) 395-6460
+    </footer>
   </div>
 </body>
 </html>

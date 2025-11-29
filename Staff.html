@@ -4,71 +4,7 @@
   <meta charset="UTF-8" />
   <title>River Valley Wound Care | Our Staff</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <style>
-    /* same styles as index for consistency – you can reuse or extract later */
-    :root {
-      --bg: #ffffff;
-      --bg-soft: #f6f7fb;
-      --text: #111827;
-      --muted: #6b7280;
-      --accent: #0ea5e9;
-      --accent-dark: #0369a1;
-      --border: #e5e7eb;
-      --shadow-soft: 0 14px 40px rgba(15, 23, 42, 0.12);
-      --radius-lg: 20px;
-      --radius-md: 14px;
-      --radius-pill: 999px;
-    }
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-    body {
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      background: var(--bg);
-      color: var(--text);
-      line-height: 1.5;
-    }
-    a { color: inherit; text-decoration: none; }
-    img { max-width: 100%; display: block; }
-    .page { max-width: 1120px; margin: 0 auto; padding: 24px 16px 48px; }
-    header {
-      display: flex; align-items: center; justify-content: space-between;
-      gap: 20px; padding-bottom: 18px; border-bottom: 1px solid var(--border);
-    }
-    .brand { display: flex; align-items: center; gap: 12px; }
-    .brand-logo { height: 60px; width: auto; }
-    .brand-text { display: flex; flex-direction: column; gap: 2px; }
-    .brand-name { font-size: 1rem; font-weight: 650; letter-spacing: 0.08em; text-transform: uppercase; }
-    .brand-tagline { font-size: 0.8rem; color: var(--muted); }
-    nav { display: flex; flex-wrap: wrap; gap: 16px; font-size: 0.9rem; color: var(--muted); }
-    nav a { position: relative; padding: 4px 0; display: inline-block; }
-    nav a::after {
-      content:""; position:absolute; left:0; right:0; bottom:-4px; height:2px; background:var(--accent); border-radius:999px;
-      transform: scaleX(0); transform-origin: left; transition: transform 0.2s ease;
-    }
-    nav a:hover::after, nav a:focus-visible::after { transform: scaleX(1); }
-    .nav-cta { padding:7px 14px; border-radius:var(--radius-pill); border:1px solid var(--accent); color:var(--accent-dark); font-size:0.85rem; font-weight:500; }
-    .nav-cta:hover { background:var(--accent); color:white; }
-    h1 { font-size: 1.9rem; margin: 28px 0 4px; }
-    .subtitle { font-size: 0.95rem; color: var(--muted); margin-bottom: 24px; }
-    .team-photo {
-      border-radius: var(--radius-lg);
-      overflow: hidden;
-      box-shadow: var(--shadow-soft);
-      margin-bottom: 24px;
-    }
-    .provider {
-      margin-bottom: 32px;
-      border-radius: var(--radius-md);
-      border: 1px solid var(--border);
-      padding: 18px 20px 16px;
-      background: var(--bg-soft);
-    }
-    .provider h2 { font-size: 1.2rem; margin-bottom: 4px; }
-    .provider .title { font-size: 0.9rem; color: var(--muted); margin-bottom: 10px; }
-    .provider p { font-size: 0.9rem; color: #4b5563; margin-bottom: 8px; }
-    @media (max-width: 900px) {
-      header { flex-direction: column; align-items: flex-start; gap: 10px; }
-    }
-  </style>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <div class="page">
@@ -91,51 +27,83 @@
     </header>
 
     <main>
-      <h1>Our Staff</h1>
-      <p class="subtitle">
-        Meet the clinicians who will partner with you on your wound healing journey.
-      </p>
-
-      <div class="team-photo">
-        <img src="team-hero.svg" alt="River Valley Wound Care team" />
-      </div>
-
-      <section class="provider">
-        <h2>Dr. Quyen T. Ha, M.D., CWSP</h2>
-        <div class="title">Certified Wound Specialist Physician · Founder, River Valley Wound Care</div>
-        <p>
-          Dr. Quyen T. Ha is a board-certified physician and Certified Wound Specialist Physician (CWSP) with advanced expertise in the treatment of complex and non-healing wounds. As the founder of River Valley Wound Care, he brings decades of clinical experience and a deeply patient-centered philosophy.
-        </p>
-        <p>
-          Dr. Ha is also the author of <em>A Runaway Teenager Who Found Freedom</em>, which tells his remarkable journey from a teenager fleeing Vietnam to becoming a wound care physician in the United States. His lived experience gives him a unique empathy for patients and a commitment to clear communication, dignity, and trust.
-        </p>
-        <p>
-          His clinical interests include diabetic foot ulcers, venous and arterial ulcers, surgical wounds, limb preservation, and the use of advanced wound technologies such as negative pressure therapy and cellular tissue products.
-        </p>
+      <section class="hero">
+        <div class="hero-content">
+          <div class="eyebrow">Our staff</div>
+          <h1>Meet the clinicians guiding your healing</h1>
+          <p class="subtitle">Experienced providers focused on clear communication, coordinated care, and compassionate support.</p>
+          <div class="badge-row">
+            <span class="pill">Certified Wound Specialist Physician</span>
+            <span class="pill">Nurse practitioner expertise</span>
+            <span class="pill">Skilled nursing support</span>
+          </div>
+          <div class="hero-actions">
+            <a href="Contact.html" class="button primary">Schedule a visit</a>
+            <a href="FAQ.html" class="button secondary">Patient FAQs</a>
+          </div>
+        </div>
+        <div class="hero-image">
+          <img src="team-hero.svg" alt="River Valley Wound Care team" />
+        </div>
       </section>
 
-      <section class="provider">
-        <h2>Paul W. Dobbs, APRN</h2>
-        <div class="title">Nurse Practitioner</div>
-        <p>
-          Paul Dobbs is an experienced Advanced Practice Registered Nurse with a strong background in wound management and primary care. He is known for his calm bedside manner, excellent communication skills, and team-focused approach to patient care.
-        </p>
-        <p>
-          Paul works closely with patients and families to explain treatment options, monitor healing progress, and coordinate care with referring providers.
-        </p>
+      <section class="section">
+        <header>
+          <div class="eyebrow">Clinical leadership</div>
+          <h2>Dedicated providers focused on complex wounds</h2>
+          <p class="intro">Our team pairs advanced training with warm, human-centered care so you feel confident throughout treatment.</p>
+        </header>
+        <div class="team-grid">
+          <article class="profile">
+            <h2>Dr. Quyen T. Ha, M.D., CWSP</h2>
+            <div class="title">Certified Wound Specialist Physician · Founder</div>
+            <p>Dr. Quyen T. Ha is a board-certified physician and Certified Wound Specialist Physician (CWSP) with advanced expertise in the treatment of complex and non-healing wounds.</p>
+            <p>He is also the author of <em>A Runaway Teenager Who Found Freedom</em>, sharing his journey from fleeing Vietnam to becoming a wound care physician in the United States.</p>
+            <p>His clinical interests include diabetic foot ulcers, venous and arterial ulcers, surgical wounds, limb preservation, and advanced wound technologies such as negative pressure therapy and cellular tissue products.</p>
+          </article>
+
+          <article class="profile">
+            <h2>Paul W. Dobbs, APRN</h2>
+            <div class="title">Nurse Practitioner</div>
+            <p>Paul Dobbs is an experienced Advanced Practice Registered Nurse with a strong background in wound management and primary care.</p>
+            <p>He is known for his calm bedside manner, excellent communication skills, and team-focused approach to patient care.</p>
+            <p>Paul works closely with patients and families to explain treatment options, monitor healing progress, and coordinate care with referring providers.</p>
+          </article>
+
+          <article class="profile">
+            <h2>Bobbi J. Dorey, LPN</h2>
+            <div class="title">Licensed Practical Nurse</div>
+            <p>Bobbi Dorey is a highly skilled Licensed Practical Nurse with extensive experience in wound assessment, dressing changes, and treatment support.</p>
+            <p>Her friendly demeanor and attention to detail help create a welcoming and efficient clinic experience.</p>
+            <p>Bobbi ensures that dressings, supplies, and follow-up care stay on track so healing can continue smoothly.</p>
+          </article>
+        </div>
       </section>
 
-      <section class="provider">
-        <h2>Bobbi J. Dorey, LPN</h2>
-        <div class="title">Licensed Practical Nurse</div>
-        <p>
-          Bobbi Dorey is a highly skilled Licensed Practical Nurse with extensive experience in wound assessment, dressing changes, and treatment support.
-        </p>
-        <p>
-          Her friendly demeanor and attention to detail help create a welcoming and efficient clinic experience while ensuring that dressings, supplies, and follow-up care stay on track.
-        </p>
+      <section class="highlight">
+        <div>
+          <div class="eyebrow">What to expect</div>
+          <h2>A calm, professional clinic experience</h2>
+          <p>We prioritize patient comfort, timely communication, and coordination with your other providers.</p>
+          <ul class="list-check">
+            <li>Thorough intake, wound assessment, and imaging when needed</li>
+            <li>Clear explanation of the treatment plan and home care</li>
+            <li>Regular follow-ups and direct communication with your physicians</li>
+          </ul>
+        </div>
+        <div class="summary-box">
+          <p class="subtitle">Ready to see the team in person?</p>
+          <div class="hero-actions">
+            <a href="Contact.html" class="button primary">Book an appointment</a>
+            <a href="Conditions.html" class="button secondary">Conditions we treat</a>
+          </div>
+        </div>
       </section>
     </main>
+
+    <footer>
+      River Valley Wound Care · 1501 South Waldron Road, Fort Smith, AR · (479) 395-6460
+    </footer>
   </div>
 </body>
 </html>
