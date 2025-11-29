@@ -4,36 +4,7 @@
   <meta charset="UTF-8" />
   <title>River Valley Wound Care | Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <style>
-    :root{--bg:#ffffff;--bg-soft:#f6f7fb;--text:#111827;--muted:#6b7280;
-          --accent:#0ea5e9;--accent-dark:#0369a1;--border:#e5e7eb;
-          --radius-md:14px;--radius-lg:20px;--radius-pill:999px;}
-    *{box-sizing:border-box;margin:0;padding:0;}
-    body{font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:var(--bg);color:var(--text);line-height:1.5;}
-    a{color:inherit;text-decoration:none;}
-    .page{max-width:1120px;margin:0 auto;padding:24px 16px 48px;}
-    header{display:flex;align-items:center;justify-content:space-between;gap:20px;padding-bottom:18px;border-bottom:1px solid var(--border);}
-    .brand{display:flex;align-items:center;gap:12px;}
-    .brand-logo{height:60px;width:auto;}
-    .brand-text{display:flex;flex-direction:column;gap:2px;}
-    .brand-name{font-size:1rem;font-weight:650;letter-spacing:0.08em;text-transform:uppercase;}
-    .brand-tagline{font-size:0.8rem;color:var(--muted);}
-    nav{display:flex;flex-wrap:wrap;gap:16px;font-size:0.9rem;color:var(--muted);}
-    nav a{position:relative;padding:4px 0;display:inline-block;}
-    nav a::after{content:"";position:absolute;left:0;right:0;bottom:-4px;height:2px;background:var(--accent);border-radius:999px;transform:scaleX(0);transform-origin:left;transition:transform 0.2s ease;}
-    nav a:hover::after,nav a:focus-visible::after{transform:scaleX(1);}
-    .nav-cta{padding:7px 14px;border-radius:var(--radius-pill);border:1px solid var(--accent);color:var(--accent-dark);font-size:0.85rem;font-weight:500;}
-    .nav-cta:hover{background:var(--accent);color:white;}
-    h1{font-size:1.9rem;margin:28px 0 4px;}
-    .subtitle{font-size:0.95rem;color:var(--muted);margin-bottom:24px;max-width:40rem;}
-    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px;}
-    .post{border-radius:var(--radius-lg);border:1px solid var(--border);background:var(--bg-soft);padding:16px 18px 14px;}
-    .post h2{font-size:1.05rem;margin-bottom:4px;}
-    .post .meta{font-size:0.78rem;color:var(--muted);margin-bottom:6px;}
-    .post p{font-size:0.9rem;color:#4b5563;margin-bottom:8px;}
-    .read-more{font-size:0.85rem;color:var(--accent-dark);}
-    @media(max-width:900px){header{flex-direction:column;align-items:flex-start;gap:10px;}}
-  </style>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <div class="page">
@@ -56,40 +27,56 @@
     </header>
 
     <main>
-      <h1>River Valley Wound Care Blog</h1>
-      <p class="subtitle">
-        Educational articles to help you understand wound care, protect your health, and know when to seek specialized treatment.
-      </p>
+      <section class="hero">
+        <div class="hero-content">
+          <div class="eyebrow">Education</div>
+          <h1>River Valley Wound Care Blog</h1>
+          <p class="subtitle">Articles to help you understand wound care, protect your health, and know when to seek specialized treatment.</p>
+          <div class="hero-actions">
+            <a href="Contact.html" class="button primary">Talk with our team</a>
+            <a href="Conditions.html" class="button secondary">See conditions we treat</a>
+          </div>
+        </div>
+        <div class="hero-image">
+          <img src="team-hero.jpg" alt="Clinicians reviewing charts" />
+        </div>
+      </section>
 
-      <div class="grid">
-        <article class="post">
-          <h2>5 Signs Your Wound Needs Specialized Care</h2>
-          <div class="meta">Patient Education · Wound Basics</div>
-          <p>
-            Not every scrape needs a wound clinic, but some warning signs mean it’s time to see a specialist. Learn what to watch for, including slow healing, increasing pain, and signs of infection.
-          </p>
-          <div class="read-more">Full article coming soon.</div>
-        </article>
+      <section class="section">
+        <header>
+          <div class="eyebrow">Featured posts</div>
+          <h2>Patient education highlights</h2>
+          <p class="intro">Full articles are coming soon. In the meantime, here's a preview of topics we're preparing for patients and families.</p>
+        </header>
 
-        <article class="post">
-          <h2>How Diabetes Affects Wound Healing</h2>
-          <div class="meta">Diabetes · Foot Ulcers</div>
-          <p>
-            High blood sugar, nerve damage, and circulation problems can all interfere with normal healing. This article explains why diabetic foot ulcers are serious and how early care can prevent complications.
-          </p>
-          <div class="read-more">Full article coming soon.</div>
-        </article>
+        <div class="grid">
+          <article class="card">
+            <h3>5 Signs Your Wound Needs Specialized Care</h3>
+            <div class="subtitle" style="margin:0 0 6px;">Patient Education · Wound Basics</div>
+            <p>Not every scrape needs a wound clinic, but some warning signs mean it’s time to see a specialist. Learn what to watch for, including slow healing, increasing pain, and signs of infection.</p>
+            <div class="pill" style="margin-top:10px; display:inline-block;">Full article coming soon</div>
+          </article>
 
-        <article class="post">
-          <h2>What to Expect at a Wound Care Visit</h2>
-          <div class="meta">New Patients · Clinic Visit</div>
-          <p>
-            Feeling nervous about your first visit? We’ll walk you through what happens during a typical appointment at River Valley Wound Care, from intake to dressing selection.
-          </p>
-          <div class="read-more">Full article coming soon.</div>
-        </article>
-      </div>
+          <article class="card">
+            <h3>How Diabetes Affects Wound Healing</h3>
+            <div class="subtitle" style="margin:0 0 6px;">Diabetes · Foot Ulcers</div>
+            <p>High blood sugar, nerve damage, and circulation problems can all interfere with normal healing. This article explains why diabetic foot ulcers are serious and how early care can prevent complications.</p>
+            <div class="pill" style="margin-top:10px; display:inline-block;">Full article coming soon</div>
+          </article>
+
+          <article class="card">
+            <h3>What to Expect at a Wound Care Visit</h3>
+            <div class="subtitle" style="margin:0 0 6px;">New Patients · Clinic Visit</div>
+            <p>Feeling nervous about your first visit? We’ll walk you through what happens during a typical appointment at River Valley Wound Care, from intake to dressing selection.</p>
+            <div class="pill" style="margin-top:10px; display:inline-block;">Full article coming soon</div>
+          </article>
+        </div>
+      </section>
     </main>
+
+    <footer>
+      River Valley Wound Care · 1501 South Waldron Road, Fort Smith, AR · (479) 395-6460
+    </footer>
   </div>
 </body>
 </html>
