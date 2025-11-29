@@ -76,7 +76,14 @@ header {
 .brand { display: flex; align-items: center; gap: 14px; }
 .brand-logo { height: 76px; width: auto; }
 .brand-text { display: flex; flex-direction: column; gap: 4px; }
-.brand-name { font-size: 1.12rem; font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase; color: var(--accent-strong); }
+.brand-name {
+  font-size: clamp(1.3rem, 2.8vw, 1.7rem);
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--accent-strong);
+  line-height: 1.05;
+}
 .brand-tagline { font-size: 0.96rem; color: var(--muted); }
 
 nav {
@@ -568,7 +575,7 @@ footer { margin-top: 48px; padding: 18px 0; font-size: 0.9rem; color: var(--mute
     gap: 12px;
   }
   .brand-logo { height: 60px; }
-  .brand-name { font-size: 1.02rem; }
+  .brand-name { font-size: clamp(1.15rem, 4vw, 1.35rem); }
   .brand-tagline { font-size: 0.9rem; }
   .menu-toggle { display: inline-flex; }
   nav {
