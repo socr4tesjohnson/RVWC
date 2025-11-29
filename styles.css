@@ -69,6 +69,37 @@ nav {
   align-items: center;
 }
 
+.menu-toggle {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  padding: 10px;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.7);
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+}
+
+.menu-toggle span {
+  display: block;
+  width: 20px;
+  height: 2px;
+  background: var(--text);
+  border-radius: 999px;
+  transition: transform 0.25s ease, opacity 0.25s ease;
+}
+
+.nav-open .menu-toggle {
+  box-shadow: 0 10px 24px rgba(15, 23, 42, 0.12);
+}
+
+.nav-open .menu-toggle span:nth-child(1) { transform: translateY(6px) rotate(45deg); }
+.nav-open .menu-toggle span:nth-child(2) { opacity: 0; }
+.nav-open .menu-toggle span:nth-child(3) { transform: translateY(-6px) rotate(-45deg); }
+
 .corner-logo {
   position: fixed;
   top: 12px;
@@ -386,14 +417,24 @@ footer { margin-top: 48px; padding: 18px 0; font-size: 0.9rem; color: var(--mute
   .page { padding: 18px 14px 38px; }
   header {
     flex-direction: column;
-    align-items: flex-start;
+    align-items: stretch;
     gap: 12px;
   }
   .brand-logo { height: 48px; }
   .brand-name { font-size: 0.95rem; }
   .brand-tagline { font-size: 0.82rem; }
-  nav { width: 100%; justify-content: flex-start; }
-  nav a { padding: 8px 12px; }
+  .menu-toggle { display: inline-flex; align-self: flex-end; }
+  nav {
+    display: none;
+    width: 100%;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 8px;
+    padding: 6px 0 2px;
+    border-top: 1px solid var(--border);
+  }
+  header.nav-open nav { display: flex; }
+  nav a { padding: 10px 12px; border-radius: var(--radius-md); }
   .hero { padding: 20px; }
   .hero-actions { width: 100%; }
   .hero-actions .button { flex: 1; min-width: 180px; }
