@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 80" role="img" aria-labelledby="title desc">
+  <title id="title">Humana logo</title>
+  <desc id="desc">Green wordmark for Humana</desc>
+  <rect width="220" height="80" rx="12" fill="#ffffff" stroke="#7ac142" stroke-width="4" />
+  <text x="50%" y="55%" text-anchor="middle" fill="#7ac142" font-family="'Arial Black', Arial, sans-serif" font-size="34" font-weight="800">Humana</text>
+</svg>

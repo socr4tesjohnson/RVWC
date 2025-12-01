@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 80" role="img" aria-labelledby="title desc">
+  <title id="title">Aetna logo</title>
+  <desc id="desc">Purple wordmark for Aetna</desc>
+  <rect width="220" height="80" rx="12" fill="#6b1fa3" />
+  <text x="50%" y="55%" text-anchor="middle" fill="#ffffff" font-family="'Arial Black', Arial, sans-serif" font-size="40" font-weight="800">aetna</text>
+</svg>

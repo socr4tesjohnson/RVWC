@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 80" role="img" aria-labelledby="title desc">
+  <title id="title">UnitedHealthcare logo</title>
+  <desc id="desc">Blue shield mark with UnitedHealthcare wordmark</desc>
+  <rect width="260" height="80" rx="12" fill="#ffffff" stroke="#0c4da2" stroke-width="3" />
+  <path d="M36 24 v26 c0 13 12 22 26 25" fill="none" stroke="#0c4da2" stroke-width="6" stroke-linecap="round" />
+  <path d="M62 21 v30 c0 9 7 16 18 19" fill="none" stroke="#0c4da2" stroke-width="6" stroke-linecap="round" />
+  <text x="120" y="50" fill="#0c4da2" font-family="'Arial Black', Arial, sans-serif" font-size="22" font-weight="800">UnitedHealthcare</text>
+</svg>

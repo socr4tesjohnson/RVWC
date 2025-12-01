@@ -540,6 +540,36 @@ main { margin-top: 28px; }
   color: var(--muted);
 }
 
+.insurance-logos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 12px;
+  margin-top: 12px;
+}
+
+.insurance-logo {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 10px 12px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.insurance-logo img {
+  width: 70px;
+  height: auto;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.insurance-logo figcaption {
+  font-weight: 700;
+  color: var(--text);
+  font-size: 0.95rem;
+}
+
 form { display: grid; gap: 10px; margin-top: 10px; }
 input, textarea {
   width: 100%;
