@@ -471,6 +471,149 @@ main { margin-top: 28px; }
   font-size: 1rem;
 }
 
+.before-after-hero {
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 28px;
+}
+
+.before-after-hero-visual {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.photo-stack {
+  display: grid;
+  gap: 12px;
+  padding: 16px;
+  background: linear-gradient(145deg, rgba(14, 165, 233, 0.12), rgba(3, 105, 161, 0.18));
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow-soft);
+  width: min(380px, 100%);
+}
+
+.photo-chip {
+  padding: 12px 14px;
+  border-radius: var(--radius-md);
+  color: var(--surface);
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.12), rgba(255, 255, 255, 0.08));
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  box-shadow: 0 10px 30px rgba(3, 105, 161, 0.2);
+  text-transform: uppercase;
+  font-size: 0.95rem;
+}
+
+.photo-chip.before {
+  background: linear-gradient(135deg, #0ea5e9, #0369a1);
+}
+
+.photo-chip.after {
+  background: linear-gradient(135deg, #22c55e, #15803d);
+}
+
+.photo-chip.detail {
+  background: linear-gradient(135deg, #fbbf24, #d97706);
+  color: #0f172a;
+}
+
+.before-after-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 18px;
+}
+
+.case-card {
+  display: grid;
+  gap: 14px;
+  padding: 18px;
+  border-radius: var(--radius-lg);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow-soft);
+}
+
+.case-text h3 {
+  margin: 4px 0 6px;
+}
+
+.case-text p {
+  color: var(--muted);
+}
+
+.before-after-pair {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 12px;
+}
+
+.before-after-pair figure {
+  display: grid;
+  gap: 6px;
+}
+
+.before-after-pair figcaption {
+  font-size: 0.92rem;
+  color: var(--muted);
+}
+
+.case-photo {
+  position: relative;
+  height: 180px;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border);
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.2);
+}
+
+.case-photo::after {
+  content: attr(data-label);
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  padding: 6px 10px;
+  border-radius: var(--radius-pill);
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  color: #0f172a;
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.case-photo.before { background-image: linear-gradient(135deg, rgba(239, 68, 68, 0.22), rgba(249, 115, 22, 0.28)); }
+.case-photo.after { background-image: linear-gradient(135deg, rgba(34, 197, 94, 0.26), rgba(59, 130, 246, 0.2)); }
+
+.photo-diabetic.before { background-image: radial-gradient(circle at 30% 30%, rgba(248, 113, 113, 0.45), transparent 48%),
+                                       radial-gradient(circle at 70% 60%, rgba(251, 146, 60, 0.45), transparent 42%),
+                                       linear-gradient(135deg, rgba(239, 68, 68, 0.22), rgba(249, 115, 22, 0.28)); }
+.photo-diabetic.after { background-image: radial-gradient(circle at 40% 40%, rgba(52, 211, 153, 0.5), transparent 46%),
+                                      radial-gradient(circle at 70% 70%, rgba(59, 130, 246, 0.32), transparent 40%),
+                                      linear-gradient(135deg, rgba(34, 197, 94, 0.26), rgba(59, 130, 246, 0.2)); }
+
+.photo-venous.before { background-image: radial-gradient(circle at 28% 40%, rgba(59, 130, 246, 0.36), transparent 48%),
+                                     radial-gradient(circle at 70% 70%, rgba(56, 189, 248, 0.38), transparent 40%),
+                                     linear-gradient(145deg, rgba(59, 130, 246, 0.18), rgba(14, 165, 233, 0.28)); }
+.photo-venous.after { background-image: radial-gradient(circle at 36% 32%, rgba(34, 197, 94, 0.48), transparent 44%),
+                                    radial-gradient(circle at 70% 70%, rgba(16, 185, 129, 0.36), transparent 40%),
+                                    linear-gradient(145deg, rgba(34, 197, 94, 0.24), rgba(52, 211, 153, 0.22)); }
+
+.photo-surgical.before { background-image: radial-gradient(circle at 28% 28%, rgba(248, 180, 0, 0.42), transparent 42%),
+                                       radial-gradient(circle at 62% 64%, rgba(244, 114, 182, 0.36), transparent 40%),
+                                       linear-gradient(135deg, rgba(248, 180, 0, 0.24), rgba(244, 114, 182, 0.2)); }
+.photo-surgical.after { background-image: radial-gradient(circle at 34% 34%, rgba(59, 130, 246, 0.28), transparent 46%),
+                                      radial-gradient(circle at 70% 68%, rgba(52, 211, 153, 0.32), transparent 40%),
+                                      linear-gradient(135deg, rgba(59, 130, 246, 0.24), rgba(52, 211, 153, 0.24)); }
+
+.case-photo.before::after { content: "Before"; }
+.case-photo.after::after { content: "After"; }
+
+.callout { margin-top: 32px; }
+
 .article-callout {
   border-radius: var(--radius-lg);
   border: 1px solid #bfdbfe;
